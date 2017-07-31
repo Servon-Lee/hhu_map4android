@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/front"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn2dwhite"
+        android:text="前"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn2dwhite"
+        android:text="后"
+        android:layout_toRightOf="@id/front"/>
+    <Button
+        android:id="@+id/left"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn2dwhite"
+        android:text="左"
+        android:layout_toRightOf="@id/back"/>
+    <Button
+        android:id="@+id/right"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn2dwhite"
+        android:text="右"
+        android:layout_toRightOf="@id/left"/>
+
+    <com.servon.hhu_map.ScaleView
+        android:id="@+id/scaleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hhu">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="6dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/male_dorm"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn2d"
+                android:text="男生dorm"
+                android:layout_alignParentTop="true"/>
+
+            <Button
+                android:id="@+id/female_dorm"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn2d"
+                android:text="女生dorm"
+                android:layout_toRightOf="@id/male_dorm"/>
+            <Button
+                android:id="@+id/lib"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn2d"
+                android:text="图书馆"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/female_dorm"/>
+
+            <Button
+                android:id="@+id/secret"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn2d"
+                android:text="新生秘笈"
+                android:layout_toRightOf="@id/lib"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/map_2d"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn2d"
+                android:text="2D地图"
+                android:layout_alignParentBottom="true"/>
+
+            <Button
+                android:id="@+id/map_round"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn2d"
+                android:text="全景地图"
+                android:layout_toRightOf="@id/map_2d"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/hhuface" />
+
+        <ImageView
+            android:id="@+id/lefteye"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/eye" />
+
+        <ImageView
+            android:id="@+id/righteye"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/eye" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/glasses" />
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="©2017 HHU-Servon\n咨询QQ:879251286\n邮箱:lzw879251286@vip.qq.com"
+            android:textSize="12sp"
+            android:textColor="#aaa"
+            android:layout_gravity="center|right|bottom"/>
+
+    </FrameLayout>
+
+</LinearLayout>
